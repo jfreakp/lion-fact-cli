@@ -1,0 +1,16 @@
+import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+
+export const homeRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    children: [],
+  },
+  {
+    path: '**',
+    children: [],
+  },
+];
+
+export default homeRoutes;
